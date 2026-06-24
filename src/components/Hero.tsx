@@ -48,7 +48,7 @@ const Hero = () => {
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary" />
               </a>
             </div>
-            <a href="#" download className="px-3 sm:px-4 md:px-5 lg:px-6 py-2 sm:py-2 md:py-2.5 lg:py-3 rounded-full bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-heading font-semibold text-xs sm:text-sm hover:shadow-lg hover:shadow-primary/50 transition-all flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2">
+            <a href="/Mahia_Akter_Momo_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-3 sm:px-4 md:px-5 lg:px-6 py-2 sm:py-2 md:py-2.5 lg:py-3 rounded-full bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-heading font-semibold text-xs sm:text-sm hover:shadow-lg hover:shadow-primary/50 transition-all flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2">
               Download CV <FileDown className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" />
             </a>
           </div>
