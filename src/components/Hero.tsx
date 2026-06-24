@@ -12,13 +12,13 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container max-w-6xl mx-auto flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 relative z-10">
+      <div className="container max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 md:gap-10 lg:gap-12 relative z-10">
         {/* Profile Card */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="relative flex flex-col items-center gap-2.5 sm:gap-3 md:gap-5 w-full sm:w-[300px] md:w-auto md:min-w-[320px] order-1 md:order-1"
+          className="relative flex flex-col items-center gap-2.5 sm:gap-3 md:gap-5 w-full sm:w-[300px] md:w-auto md:min-w-[320px]"
         >
           {/* Glow effect */}
           <div className="absolute -bottom-2 sm:-bottom-4 left-1/2 -translate-x-1/2 w-24 sm:w-40 md:w-48 lg:w-64 h-12 sm:h-20 md:h-24 lg:h-32 bg-primary/30 rounded-full blur-3xl -z-10" />
@@ -30,10 +30,6 @@ const Hero = () => {
             </div>
             <AnimatedText text="Mahia Akter Momo" className="text-base sm:text-lg md:text-2xl lg:text-3xl font-heading font-bold text-foreground text-center leading-tight" />
             <p className="text-xs sm:text-xs md:text-sm text-muted-foreground text-center px-1 line-clamp-2">AI/ML Engineer & Full Stack Developer</p>
-            <div className="flex items-center gap-1 sm:gap-1.5">
-              <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-xs text-muted-foreground whitespace-nowrap">Open to work</span>
-            </div>
             <div className="flex gap-0.5 sm:gap-1.5 md:gap-3 lg:gap-4 mt-0.5 sm:mt-1.5 md:mt-2 flex-wrap justify-center">
               <a href="https://www.linkedin.com/in/mahiamomo12/" target="_blank" rel="noopener noreferrer" className="p-1.5 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
                 <Linkedin className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-primary" />
@@ -59,7 +55,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex-1 w-full md:flex-initial order-2 md:order-2"
+          className="flex-1 w-full md:flex-initial"
         >
           <p className="text-primary font-heading font-medium mb-1.5 sm:mb-2 md:mb-3 text-xs sm:text-sm md:text-base px-1 text-center md:text-left">Build. Innovate. Impact.</p>
           <h1 className="text-base sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold leading-snug mb-2 sm:mb-3 md:mb-4 px-1 text-center md:text-left">
