@@ -12,44 +12,44 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 relative z-10">
+      <div className="container max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 md:gap-10 lg:gap-12 relative z-10">
         {/* Profile Card */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="relative flex flex-col items-center gap-2.5 sm:gap-3 md:gap-5 w-full md:w-auto md:min-w-[340px]"
+          className="relative flex flex-col items-center gap-2.5 sm:gap-3 md:gap-5 w-full sm:w-[280px] md:w-auto md:min-w-[320px]"
         >
           {/* Glow effect */}
           <div className="absolute -bottom-2 sm:-bottom-4 left-1/2 -translate-x-1/2 w-24 sm:w-40 md:w-48 lg:w-64 h-12 sm:h-20 md:h-24 lg:h-32 bg-primary/30 rounded-full blur-3xl -z-10" />
           
           {/* Card Container */}
-          <div className="backdrop-blur-xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/40 rounded-lg sm:rounded-2xl md:rounded-3xl p-3 sm:p-5 md:p-8 lg:p-10 w-full flex flex-col items-center gap-2 sm:gap-3 md:gap-5 shadow-xl">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden border-4 border-primary/40 shadow-lg hover:shadow-2xl transition-shadow">
+          <div className="backdrop-blur-xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/40 rounded-lg sm:rounded-2xl md:rounded-3xl px-2 sm:px-4 md:px-8 lg:px-10 py-3 sm:py-5 md:py-8 lg:py-10 w-full flex flex-col items-center gap-1.5 sm:gap-2 md:gap-4 shadow-xl">
+            <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden border-2 sm:border-3 md:border-4 border-primary/40 shadow-lg hover:shadow-2xl transition-shadow">
               <img src={profileImg} alt="Mahia Akter Momo" width={512} height={512} className="w-full h-full object-cover" />
             </div>
-            <AnimatedText text="Mahia Akter Momo" className="text-base sm:text-xl md:text-3xl font-heading font-bold text-foreground text-center leading-tight" />
-            <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center px-1">AI/ML Engineer & Full Stack Developer</p>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-xs sm:text-sm text-muted-foreground">Open to work</span>
+            <AnimatedText text="Mahia Akter Momo" className="text-sm sm:text-lg md:text-2xl lg:text-3xl font-heading font-bold text-foreground text-center leading-tight" />
+            <p className="text-xs sm:text-xs md:text-sm text-muted-foreground text-center px-1 line-clamp-2">AI/ML Engineer & Full Stack Developer</p>
+            <div className="flex items-center gap-1 sm:gap-1.5">
+              <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-xs text-muted-foreground whitespace-nowrap">Open to work</span>
             </div>
-            <div className="flex gap-1 sm:gap-2 md:gap-3 lg:gap-4 mt-1 sm:mt-2 md:mt-3 flex-wrap justify-center">
-              <a href="https://www.linkedin.com/in/mahiamomo12/" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
-                <Linkedin className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary" />
+            <div className="flex gap-0.5 sm:gap-1.5 md:gap-3 lg:gap-4 mt-0.5 sm:mt-1.5 md:mt-2 flex-wrap justify-center">
+              <a href="https://www.linkedin.com/in/mahiamomo12/" target="_blank" rel="noopener noreferrer" className="p-1.5 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
+                <Linkedin className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-primary" />
               </a>
-              <a href="https://github.com/mahiamOmO" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
-                <Github className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary" />
+              <a href="https://github.com/mahiamOmO" target="_blank" rel="noopener noreferrer" className="p-1.5 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
+                <Github className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-primary" />
               </a>
-              <a href="https://www.facebook.com/mahia.momo.12/" target="_blank" rel="noopener noreferrer" className="p-2 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
-                <Facebook className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary" />
+              <a href="https://www.facebook.com/mahia.momo.12/" target="_blank" rel="noopener noreferrer" className="p-1.5 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
+                <Facebook className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-primary" />
               </a>
-              <a href="mailto:mahiamomo12@gmail.com" className="p-2 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
-                <Mail className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary" />
+              <a href="mailto:mahiamomo12@gmail.com" className="p-1.5 sm:p-2 md:p-2.5 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors border border-primary/30">
+                <Mail className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-primary" />
               </a>
             </div>
-            <a href="/Mahia_Akter_Momo_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-3 sm:px-4 md:px-5 lg:px-6 py-2 sm:py-2 md:py-2.5 lg:py-3 rounded-full bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-heading font-semibold text-xs sm:text-sm hover:shadow-lg hover:shadow-primary/50 transition-all flex items-center justify-center gap-1 sm:gap-1.5 md:gap-2">
-              Download CV <FileDown className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" />
+            <a href="/Mahia_Akter_Momo_resume.pdf" target="_blank" rel="noopener noreferrer" className="px-2 sm:px-4 md:px-5 lg:px-6 py-1.5 sm:py-2 md:py-2.5 lg:py-3 rounded-full bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-heading font-semibold text-xs sm:text-sm hover:shadow-lg hover:shadow-primary/50 transition-all flex items-center justify-center gap-0.5 sm:gap-1.5 md:gap-2">
+              Download CV <FileDown className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
             </a>
           </div>
         </motion.div>
@@ -90,17 +90,13 @@ const Hero = () => {
               <p className="text-base sm:text-lg md:text-2xl lg:text-3xl font-heading font-bold text-gradient">1+</p>
               <p className="text-xs text-muted-foreground uppercase tracking-wider">Idea Comp</p>
             </div>
-            <div className="hidden md:block text-center">
-              <p className="text-base sm:text-lg md:text-2xl lg:text-3xl font-heading font-bold text-gradient">2+</p>
-              <p className="text-xs text-muted-foreground uppercase tracking-wider">Years Exp</p>
-            </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 px-1 sm:px-0">
-            <a href="#contact" className="px-4 sm:px-5 md:px-6 py-2 sm:py-2 md:py-2.5 lg:py-3 rounded-lg bg-primary text-primary-foreground font-heading font-medium text-xs sm:text-sm hover:opacity-90 transition-opacity text-center">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-2 md:gap-3 px-1 sm:px-0 w-full sm:w-auto">
+            <a href="#contact" className="px-3 sm:px-5 md:px-6 py-1.5 sm:py-2 md:py-2.5 lg:py-3 rounded-lg bg-primary text-primary-foreground font-heading font-medium text-xs sm:text-sm hover:opacity-90 transition-opacity text-center flex-1 sm:flex-initial">
               Let's Talk
             </a>
-            <a href="#projects" className="px-4 sm:px-5 md:px-6 py-2 sm:py-2 md:py-2.5 lg:py-3 rounded-lg border border-border text-foreground font-heading font-medium text-xs sm:text-sm hover:bg-secondary transition-colors text-center">
+            <a href="#projects" className="px-3 sm:px-5 md:px-6 py-1.5 sm:py-2 md:py-2.5 lg:py-3 rounded-lg border border-border text-foreground font-heading font-medium text-xs sm:text-sm hover:bg-secondary transition-colors text-center flex-1 sm:flex-initial">
               My Work →
             </a>
           </div>
