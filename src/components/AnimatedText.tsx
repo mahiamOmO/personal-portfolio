@@ -37,18 +37,24 @@ const AnimatedText = ({ text, className = "" }: AnimatedTextProps) => {
   };
 
   return (
-    <motion.div
+    <motion.span
       className={className}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      style={{ display: "inline" }}
     >
       {words.map((word, index) => (
-        <motion.span key={index} variants={wordVariants} className="inline-block mr-2">
+        <motion.span
+          key={index}
+          variants={wordVariants}
+          className="inline-block"
+          style={{ marginRight: index < words.length - 1 ? "0.25em" : 0 }}
+        >
           {word}
         </motion.span>
       ))}
-    </motion.div>
+    </motion.span>
   );
 };
 
