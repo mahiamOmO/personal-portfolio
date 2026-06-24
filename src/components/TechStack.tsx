@@ -34,10 +34,10 @@ const technologies = {
 const TechCard = ({ name, icon: Icon, color }: { name: string; icon: any; color: string }) => (
   <motion.div
     whileHover={{ scale: 1.05, y: -5 }}
-    className="flex flex-col items-center justify-center gap-3 p-4 sm:p-5 rounded-xl border border-border/50 bg-card/50 hover:bg-primary/10 transition-all cursor-pointer group min-h-[120px]"
+    className="flex flex-col items-center justify-center gap-2 p-2.5 sm:p-3 md:p-4 rounded-lg sm:rounded-xl border border-border/50 bg-card/50 hover:bg-primary/10 transition-all cursor-pointer group min-h-[90px] sm:min-h-[100px] md:min-h-[120px]"
   >
-    <Icon style={{ color: color }} size={40} className="sm:w-12 sm:h-12" />
-    <p className="text-xs sm:text-sm font-medium text-foreground text-center line-clamp-2">{name}</p>
+    <Icon style={{ color: color }} size={28} className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+    <p className="text-xs font-medium text-foreground text-center line-clamp-2">{name}</p>
   </motion.div>
 );
 
@@ -67,12 +67,12 @@ const TechStack = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-4xl font-heading font-bold mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-2">
             Tools & <span className="text-gradient">Technologies</span>
           </h2>
-          <p className="text-muted-foreground text-sm">Technologies I work with</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">Technologies I work with</p>
         </motion.div>
 
         {/* Frontend */}
@@ -81,12 +81,12 @@ const TechStack = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-12 sm:mb-16"
+          className="mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h3 className="text-lg sm:text-xl font-heading font-semibold text-primary mb-6 text-center">Frontend</h3>
+          <h3 className="text-base sm:text-lg md:text-xl font-heading font-semibold text-primary mb-4 sm:mb-5 md:mb-6 text-center">Frontend</h3>
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5 sm:gap-3 md:gap-4"
           >
             {technologies.frontend.map((tech) => (
               <motion.div key={tech.name} variants={itemVariants}>
@@ -102,12 +102,12 @@ const TechStack = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-12 sm:mb-16"
+          className="mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h3 className="text-lg sm:text-xl font-heading font-semibold text-primary mb-6 text-center">Backend</h3>
+          <h3 className="text-base sm:text-lg md:text-xl font-heading font-semibold text-primary mb-4 sm:mb-5 md:mb-6 text-center">Backend</h3>
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2.5 sm:gap-3 md:gap-4"
           >
             {technologies.backend.map((tech) => (
               <motion.div key={tech.name} variants={itemVariants}>
@@ -124,10 +124,10 @@ const TechStack = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h3 className="text-lg sm:text-xl font-heading font-semibold text-primary mb-6 text-center">Tools & Libraries</h3>
+          <h3 className="text-base sm:text-lg md:text-xl font-heading font-semibold text-primary mb-4 sm:mb-5 md:mb-6 text-center">Tools & AI</h3>
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2.5 sm:gap-3 md:gap-4"
           >
             {technologies.tools.map((tech) => (
               <motion.div key={tech.name} variants={itemVariants}>

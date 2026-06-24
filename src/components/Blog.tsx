@@ -33,23 +33,23 @@ const blogs = [
 
 const Blog = () => {
   return (
-    <section id="blog" className="py-20 px-4">
+    <section id="blog" className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4">
       <div className="container max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold">
             Latest <span className="text-gradient">Blogs</span>
           </h2>
-          <p className="text-muted-foreground mt-2">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-2 sm:mt-3">
             <a href="https://medium.com/@mahiamomo12" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Read more on Medium →</a>
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
           {blogs.map((blog, i) => (
             <motion.a
               key={i}

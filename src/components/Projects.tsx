@@ -63,21 +63,21 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4">
       <div className="container max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16"
         >
-          <p className="text-muted-foreground text-sm uppercase tracking-wider mb-2">Featured Work</p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold">
+          <p className="text-muted-foreground text-xs sm:text-sm uppercase tracking-wider mb-1.5 sm:mb-2 md:mb-3">Featured Work</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold">
             Projects With <span className="text-gradient">Impact</span>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={i}

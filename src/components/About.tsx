@@ -45,25 +45,25 @@ const education = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4">
       <div className="container max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+          className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-center mb-10 md:mb-12 lg:mb-16"
         >
           About <span className="text-gradient">Me</span>
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
           {/* Experience */}
           <div>
-            <div className="flex items-center gap-2 mb-8">
+            <div className="flex items-center gap-2 mb-6 sm:mb-8">
               <Briefcase className="w-5 h-5 text-primary" />
-              <h3 className="text-xl font-heading font-semibold">Experience</h3>
+              <h3 className="text-lg sm:text-xl font-heading font-semibold">Experience</h3>
             </div>
-            <div className="space-y-6 relative">
+            <div className="space-y-4 sm:space-y-6 relative">
               <div className="absolute left-[7px] top-2 bottom-2 w-px bg-border" />
               {experiences.map((exp, i) => (
                 <motion.div
@@ -72,7 +72,7 @@ const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="relative pl-8"
+                  className="relative pl-6 sm:pl-8"
                 >
                   <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-primary/20 border-2 border-primary" />
                   <p className="text-xs text-muted-foreground mb-1">{exp.period}</p>
